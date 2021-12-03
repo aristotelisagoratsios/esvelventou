@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.0" type="template" client="site">
+
+<name>FavouriteDark</name>
+<version>1.2</version>
+<creationDate>February 2014</creationDate>
+<author>FavThemes</author>
+<authorEmail>hello@favthemes.com</authorEmail>
+<authorUrl>http://www.favthemes.com</authorUrl>
+<copyright>Copyright (C) 2014 FavThemes. All rights reserved.</copyright>
+<license>http://www.gnu.org/licenses/gpl.html GNU/GPL</license>
+<description><![CDATA[ 
+<script src="../templates/favouritedark/admin/jscolor/jscolor.js" type="text/javascript"></script>
+<link rel="stylesheet" href="../templates/favouritedark/admin/admin.css" type="text/css" />
+
+<p style="text-align:left;"><strong>Favourite Dark</strong> is the dark version of <strong>Favourite</strong>, our free responsive Joomla! template. Being responsive, it's a smart template that adapts and resizes itself to desktop and mobile devices. It was built with HTML5 and CSS3 and has an extensive set of parameters for easy and fast customization to suit your clients’ needs as quickly as possible.</p>
+<p style="text-align:left;">Did we mention is a completely FREE responsive Joomla! template, licensed under GNU/GPL3? So feel free to use it in your projects and design awesome responsive websites!</p>
+]]></description>
+
+
+<files>
+	<filename>index.php</filename>
+	<filename>templateDetails.xml</filename>
+	<filename>template_preview.png</filename>
+	<filename>template_thumbnail.png</filename>
+	<filename>component.php</filename>
+	<filename>favicon.ico</filename>
+	<filename>error.php</filename>
+	<filename>apple-touch-icon.png</filename>
+	<folder>css</folder>
+	<folder>html</folder>
+	<folder>images</folder>
+	<folder>icons</folder>
+	<folder>js</folder>
+	<folder>admin</folder>
+	<folder>language</folder>
+</files>
+
+<positions>	
+	<position>advert</position>
+	<position>logo</position>
+	<position>nav</position>
+	<position>slide1</position>
+	<position>slide2</position>
+	<position>intro1</position>
+	<position>intro2</position>
+	<position>intro3</position>
+	<position>intro4</position>
+	<position>breadcrumbs</position>
+	<position>showcase1</position>
+	<position>showcase2</position>
+	<position>showcase3</position>
+	<position>showcase4</position>
+	<position>promo1</position>
+	<position>promo2</position>
+	<position>promo3</position>
+	<position>top1</position>
+	<position>top2</position>
+	<position>top3</position>
+	<position>top4</position>
+	<position>maintop1</position>
+	<position>maintop2</position>
+	<position>maintop3</position>
+	<position>sidebar1</position>
+	<position>sidebar2</position>
+	<position>mainbottom1</position>
+	<position>mainbottom2</position>
+	<position>mainbottom3</position>
+	<position>bottom1</position>
+	<position>bottom2</position>
+	<position>bottom3</position>
+	<position>bottom4</position>
+	<position>user1</position>
+	<position>user2</position>
+	<position>user3</position>
+	<position>footer1</position>
+	<position>footer2</position>
+	<position>footer3</position>
+	<position>footer4</position>
+	<position>copyright1</position>
+	<position>copyright2</position>
+	<position>debug</position>
+</positions>
+
+<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_favouritedark.ini</language>
+</languages>
+
+<config>
+	<fields name="params">
+
+		<fieldset name="style" description="" label="TPL_FAVOURITE_DARK_PARAMS_STYLE">
+
+			<field name="templateStyles" type="list" default="style1"
+				label="TPL_FAVOURITE_DARK_PARAMS_STYLES_LABEL"
+				description="TPL_FAVOURITE_DARK_PARAMS_STYLES_DESC"
+				>
+				<option value="style1">TPL_FAVOURITE_DARK_PARAMS_STYLES_STYLE1</option>
+				<option value="style2">TPL_FAVOURITE_DARK_PARAMS_STYLES_STYLE2</option>
+				<option value="style3">TPL_FAVOURITE_DARK_PARAMS_STYLES_STYLE3</option>
+				<option value="style4">TPL_FAVOURITE_DARK_PARAMS_STYLES_STYLE4</option>
+				<option value="style5">TPL_FAVOURITE_DARK_PARAMS_STYLES_STYLE5</option>
+				<option value="style6">TPL_FAVOURITE_DARK_PARAMS_STYLES_STYLE6</option>
+				<option value="style7">TPL_FAVOURITE_DARK_PARAMS_STYLES_STYLE7</option>
+				<option value="style8">TPL_FAVOURITE_DARK_PARAMS_STYLES_STYLE8</option>
+				<option value="style9">TPL_FAVOURITE_DARK_PARAMS_STYLES_STYLE9</option>
+				<option value="style10">TPL_FAVOURITE_DARK_PARAMS_STYLES_STYLE10</option>
+			</field>
+
+			<field name="maxWidth" type="text" default="" label="TPL_FAVOURITE_DARK_MAX_WIDTH_LABEL" description="TPL_FAVOURITE_DARK_MAX_WIDTH_DESC"></field>
+
+			<field name="googleFont" class="" type="text" default="" label="TPL_FAVOURITE_DARK_GOOGLE_FONT_LABEL" description="TPL_FAVOURITE_DARK_GOOGLE_FONT_DESC" />
+
+			<field name="showBacktotop" type="radio" default="1" class="btn-group" label="TPL_FAVOURITE_DARK_BACKTOTOP_LABEL" description="TPL_FAVOURITE_DARK_BACKTOTOP_DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+
+		<field type="spacer" hr="true" />
+			
+			<field name="stripeImage" type="media" label="TPL_FAVOURITE_DARK_STRIPE_IMAGE_LABEL" description="TPL_FAVOURITE_DARK_STRIPE_IMAGE_DESC" />
+
+			<field name="bodyBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_BODY_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_BODY_BG_COLOR_DESC"></field>
+
+			<field name="bodyBgImage" type="media" label="TPL_FAVOURITE_DARK_BODY_BG_IMAGE_LABEL" description="TPL_FAVOURITE_DARK_BODY_BG_IMAGE_DESC" />
+
+			<field name="bodyBgRepeat" type="list" default="repeat" label="TPL_FAVOURITE_DARK_BODY_BG_REPEAT_LABEL" description="TPL_FAVOURITE_DARK_BODY_BG_REPEAT_DESC">
+				<option value="repeat">repeat</option>
+				<option value="no-repeat">no-repeat</option>
+				<option value="repeat-x">repeat-x</option>
+				<option value="repeat-y">repeat-y</option>
+			</field>
+
+		<field type="spacer" hr="true" />	
+
+			<field name="articleTitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_ARTICLE_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_ARTICLE_TITLE_COLOR_DESC"></field>
+
+			<field name="articleTitleLinkColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_ARTICLE_TITLE_LINK_COLOR_LABEL" description="TPL_FAVOURITE_DARK_ARTICLE_TITLE_LINK_COLOR_DESC"></field>
+
+			<field name="articleTitleLinkHoverColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_ARTICLE_TITLE_LINK_HOVER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_ARTICLE_TITLE_LINK_HOVER_COLOR_DESC"></field>
+
+			<field name="articleTitleFontSize" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_ARTICLE_TITLE_FONT_SIZE_LABEL" description="TPL_FAVOURITE_DARK_ARTICLE_TITLE_FONT_SIZE_DESC"></field>
+
+			<field name="articleTitleLineHeight" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_ARTICLE_TITLE_LINE_HEIGHT_LABEL" description="TPL_FAVOURITE_DARK_ARTICLE_TITLE_LINE_HEIGHT_DESC"></field>
+
+		<field type="spacer" hr="true" />	
+
+			<field name="moduleTitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_MODULE_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_MODULE_TITLE_COLOR_DESC"></field>
+
+			<field name="moduleTitleFontSize" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_MODULE_TITLE_FONT_SIZE_LABEL" description="TPL_FAVOURITE_DARK_MODULE_TITLE_FONT_SIZE_DESC"></field>
+
+			<field name="moduleTitleLineHeight" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_MODULE_TITLE_LINE_HEIGHT_LABEL" description="TPL_FAVOURITE_DARK_MODULE_TITLE_LINE_HEIGHT_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="navColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_NAV_COLOR_LABEL" description="TPL_FAVOURITE_DARK_NAV_COLOR_DESC"></field>
+			
+			<field name="navBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_NAV_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_NAV_BG_COLOR_DESC"></field>
+
+			<field name="navActiveColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_NAV_ACTIVE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_NAV_ACTIVE_COLOR_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="paragraphColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_PARAGRAPH_COLOR_LABEL" description="TPL_FAVOURITE_DARK_PARAGRAPH_COLOR_DESC"></field>
+
+			<field name="paragraphFontSize" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_PARAGRAPH_FONT_SIZE_LABEL" description="TPL_FAVOURITE_DARK_PARAGRAPH_FONT_SIZE_DESC"></field>
+
+			<field name="paragraphLineHeight" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_PARAGRAPH_LINE_HEIGHT_LABEL" description="TPL_FAVOURITE_DARK_PARAGRAPH_LINE_HEIGHT_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="buttonColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_BUTTON_COLOR_LABEL" description="TPL_FAVOURITE_DARK_BUTTON_COLOR_DESC"></field>
+
+			<field name="buttonBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_BUTTON_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_BUTTON_BG_COLOR_DESC"></field>
+
+			<field name="buttonBorderColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_BUTTON_BORDER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_BUTTON_BORDER_COLOR_DESC"></field>
+
+			<field name="buttonHoverColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_BUTTON_HOVER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_BUTTON_HOVER_COLOR_DESC"></field>
+
+			<field name="buttonBgHoverColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_HOVER_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_HOVER_BG_COLOR_DESC"></field>
+
+			<field name="buttonBorderHoverColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_BUTTON_BORDER_HOVER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_BUTTON_BORDER_HOVER_COLOR_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="linkColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_LINK_COLOR_LABEL" description="TPL_FAVOURITE_DARK_LINK_COLOR_DESC"></field>
+
+			<field name="linkColorHover" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_LINK_COLOR_HOVER_LABEL" description="TPL_FAVOURITE_DARK_LINK_COLOR_HOVER_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="listColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_LIST_COLOR_LABEL" description="TPL_FAVOURITE_DARK_LIST_COLOR_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="basicMenuColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_BASIC_MENU_COLOR_LABEL" description="TPL_FAVOURITE_DARK_BASIC_MENU_COLOR_DESC"></field>
+
+			<field name="basicMenuBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_BASIC_MENU_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_BASIC_MENU_BG_COLOR_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="advertBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_ADVERT_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_ADVERT_BG_COLOR_DESC"></field>
+
+			<field name="advertBgImage" type="media" label="TPL_FAVOURITE_DARK_ADVERT_BG_IMAGE_LABEL" description="TPL_FAVOURITE_DARK_ADVERT_BG_IMAGE_DESC" />
+
+			<field name="advertBgRepeat" type="list" default="repeat" label="TPL_FAVOURITE_DARK_ADVERT_BG_REPEAT_LABEL" description="TPL_FAVOURITE_DARK_ADVERT_BG_REPEAT_DESC">
+				<option value="repeat">repeat</option>
+				<option value="no-repeat">no-repeat</option>
+				<option value="repeat-x">repeat-x</option>
+				<option value="repeat-y">repeat-y</option>
+			</field>
+
+			<field name="advertColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_ADVERT_COLOR_LABEL" description="TPL_FAVOURITE_DARK_ADVERT_COLOR_DESC"></field>
+
+			<field name="advertTitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_ADVERT_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_ADVERT_TITLE_COLOR_DESC"></field>
+
+			<field name="advertLinkColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_ADVERT_LINK_COLOR_LABEL" description="TPL_FAVOURITE_DARK_ADVERT_LINK_COLOR_DESC"></field>
+
+			<field name="advertLinkHoverColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_ADVERT_LINK_HOVER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_ADVERT_LINK_HOVER_COLOR_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="slideBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SLIDE_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SLIDE_BG_COLOR_DESC"></field>
+
+			<field name="slideBgImage" type="media" label="TPL_FAVOURITE_DARK_SLIDE_BG_IMAGE_LABEL" description="TPL_FAVOURITE_DARK_SLIDE_BG_IMAGE_DESC" />
+
+			<field name="slideBgRepeat" type="list" default="repeat" label="TPL_FAVOURITE_DARK_SLIDE_BG_REPEAT_LABEL" description="TPL_FAVOURITE_DARK_SLIDE_BG_REPEAT_DESC">
+				<option value="repeat">repeat</option>
+				<option value="no-repeat">no-repeat</option>
+				<option value="repeat-x">repeat-x</option>
+				<option value="repeat-y">repeat-y</option>
+			</field>
+
+			<field name="slideColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SLIDE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SLIDE_COLOR_DESC"></field>
+
+			<field name="slideTitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SLIDE_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SLIDE_TITLE_COLOR_DESC"></field>
+
+			<field name="slideLinkColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SLIDE_LINK_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SLIDE_LINK_COLOR_DESC"></field>
+
+			<field name="slideLinkHoverColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SLIDE_LINK_HOVER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SLIDE_LINK_HOVER_COLOR_DESC"></field>
+		
+		<field type="spacer" hr="true" />
+
+			<field name="introBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_INTRO_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_INTRO_BG_COLOR_DESC"></field>
+
+			<field name="introBgImage" type="media" label="TPL_FAVOURITE_DARK_INTRO_BG_IMAGE_LABEL" description="TPL_FAVOURITE_DARK_INTRO_BG_IMAGE_DESC" />
+
+			<field name="introBgRepeat" type="list" default="repeat" label="TPL_FAVOURITE_DARK_INTRO_BG_REPEAT_LABEL" description="TPL_FAVOURITE_DARK_INTRO_BG_REPEAT_DESC">
+				<option value="repeat">repeat</option>
+				<option value="no-repeat">no-repeat</option>
+				<option value="repeat-x">repeat-x</option>
+				<option value="repeat-y">repeat-y</option>
+			</field>
+
+			<field name="introColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_INTRO_COLOR_LABEL" description="TPL_FAVOURITE_DARK_INTRO_COLOR_DESC"></field>
+
+			<field name="introTitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_INTRO_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_INTRO_TITLE_COLOR_DESC"></field>
+
+			<field name="introLinkColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_INTRO_LINK_COLOR_LABEL" description="TPL_FAVOURITE_DARK_INTRO_LINK_COLOR_DESC"></field>
+
+			<field name="introLinkHoverColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_INTRO_LINK_HOVER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_INTRO_LINK_HOVER_COLOR_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="showcaseBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SHOWCASE_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SHOWCASE_BG_COLOR_DESC"></field>
+
+			<field name="showcaseBgImage" type="media" label="TPL_FAVOURITE_DARK_SHOWCASE_BG_IMAGE_LABEL" description="TPL_FAVOURITE_DARK_SHOWCASE_BG_IMAGE_DESC" />
+
+			<field name="showcaseBgRepeat" type="list" default="repeat" label="TPL_FAVOURITE_DARK_SHOWCASE_BG_REPEAT_LABEL" description="TPL_FAVOURITE_DARK_SHOWCASE_BG_REPEAT_DESC">
+				<option value="repeat">repeat</option>
+				<option value="no-repeat">no-repeat</option>
+				<option value="repeat-x">repeat-x</option>
+				<option value="repeat-y">repeat-y</option>
+			</field>
+
+			<field name="showcaseColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SHOWCASE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SHOWCASE_COLOR_DESC"></field>
+
+			<field name="showcaseTitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SHOWCASE_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SHOWCASE_TITLE_COLOR_DESC"></field>
+
+			<field name="showcaseLinkColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SHOWCASE_LINK_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SHOWCASE_LINK_COLOR_DESC"></field>
+
+			<field name="showcaseLinkHoverColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SHOWCASE_LINK_HOVER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SHOWCASE_LINK_HOVER_COLOR_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="promoBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_PROMO_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_PROMO_BG_COLOR_DESC"></field>
+
+			<field name="promoBgImage" type="media" label="TPL_FAVOURITE_DARK_PROMO_BG_IMAGE_LABEL" description="TPL_FAVOURITE_DARK_PROMO_BG_IMAGE_DESC" />
+
+			<field name="promoBgRepeat" type="list" default="repeat" label="TPL_FAVOURITE_DARK_PROMO_BG_REPEAT_LABEL" description="TPL_FAVOURITE_DARK_PROMO_BG_REPEAT_DESC">
+				<option value="repeat">repeat</option>
+				<option value="no-repeat">no-repeat</option>
+				<option value="repeat-x">repeat-x</option>
+				<option value="repeat-y">repeat-y</option>
+			</field>
+
+			<field name="promoColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_PROMO_COLOR_LABEL" description="TPL_FAVOURITE_DARK_PROMO_COLOR_DESC"></field>
+
+			<field name="promoTitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_PROMO_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_PROMO_TITLE_COLOR_DESC"></field>
+
+			<field name="promoLinkColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_PROMO_LINK_COLOR_LABEL" description="TPL_FAVOURITE_DARK_PROMO_LINK_COLOR_DESC"></field>
+
+			<field name="promoLinkHoverColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_PROMO_LINK_HOVER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_PROMO_LINK_HOVER_COLOR_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="topBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_TOP_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_TOP_BG_COLOR_DESC"></field>
+
+			<field name="topBgImage" type="media" label="TPL_FAVOURITE_DARK_TOP_BG_IMAGE_LABEL" description="TPL_FAVOURITE_DARK_TOP_BG_IMAGE_DESC" />
+
+			<field name="topBgRepeat" type="list" default="repeat" label="TPL_FAVOURITE_DARK_TOP_BG_REPEAT_LABEL" description="TPL_FAVOURITE_DARK_TOP_BG_REPEAT_DESC">
+				<option value="repeat">repeat</option>
+				<option value="no-repeat">no-repeat</option>
+				<option value="repeat-x">repeat-x</option>
+				<option value="repeat-y">repeat-y</option>
+			</field>
+
+			<field name="topColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_TOP_COLOR_LABEL" description="TPL_FAVOURITE_DARK_TOP_COLOR_DESC"></field>
+
+			<field name="topTitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_TOP_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_TOP_TITLE_COLOR_DESC"></field>
+
+			<field name="topLinkColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_TOP_LINK_COLOR_LABEL" description="TPL_FAVOURITE_DARK_TOP_LINK_COLOR_DESC"></field>
+
+			<field name="topLinkHoverColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_TOP_LINK_HOVER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_TOP_LINK_HOVER_COLOR_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="maintopBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_MAINTOP_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_MAINTOP_BG_COLOR_DESC"></field>
+
+			<field name="maintopBgImage" type="media" label="TPL_FAVOURITE_DARK_MAINTOP_BG_IMAGE_LABEL" description="TPL_FAVOURITE_DARK_MAINTOP_BG_IMAGE_DESC" />
+
+			<field name="maintopBgRepeat" type="list" default="repeat" label="TPL_FAVOURITE_DARK_MAINTOP_BG_REPEAT_LABEL" description="TPL_FAVOURITE_DARK_MAINTOP_BG_REPEAT_DESC">
+				<option value="repeat">repeat</option>
+				<option value="no-repeat">no-repeat</option>
+				<option value="repeat-x">repeat-x</option>
+				<option value="repeat-y">repeat-y</option>
+			</field>
+
+			<field name="maintopColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_MAINTOP_COLOR_LABEL" description="TPL_FAVOURITE_DARK_MAINTOP_COLOR_DESC"></field>
+
+			<field name="maintopTitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_MAINTOP_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_MAINTOP_TITLE_COLOR_DESC"></field>
+
+			<field name="maintopLinkColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_MAINTOP_LINK_COLOR_LABEL" description="TPL_FAVOURITE_DARK_MAINTOP_LINK_COLOR_DESC"></field>
+
+			<field name="maintopLinkHoverColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_MAINTOP_LINK_HOVER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_MAINTOP_LINK_HOVER_COLOR_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="mainbottomBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_MAINBOTTOM_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_MAINBOTTOM_BG_COLOR_DESC"></field>
+
+			<field name="mainbottomBgImage" type="media" label="TPL_FAVOURITE_DARK_MAINBOTTOM_BG_IMAGE_LABEL" description="TPL_FAVOURITE_DARK_MAINBOTTOM_BG_IMAGE_DESC" />
+
+			<field name="mainbottomBgRepeat" type="list" default="repeat" label="TPL_FAVOURITE_DARK_MAINBOTTOM_BG_REPEAT_LABEL" description="TPL_FAVOURITE_DARK_MAINBOTTOM_BG_REPEAT_DESC">
+				<option value="repeat">repeat</option>
+				<option value="no-repeat">no-repeat</option>
+				<option value="repeat-x">repeat-x</option>
+				<option value="repeat-y">repeat-y</option>
+			</field>
+
+			<field name="mainbottomColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_MAINBOTTOM_COLOR_LABEL" description="TPL_FAVOURITE_DARK_MAINBOTTOM_COLOR_DESC"></field>
+
+			<field name="mainbottomTitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_MAINBOTTOM_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_MAINBOTTOM_TITLE_COLOR_DESC"></field>
+
+			<field name="mainbottomLinkColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_MAINBOTTOM_LINK_COLOR_LABEL" description="TPL_FAVOURITE_DARK_MAINBOTTOM_LINK_COLOR_DESC"></field>
+
+			<field name="mainbottomLinkHoverColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_MAINBOTTOM_LINK_HOVER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_MAINBOTTOM_LINK_HOVER_COLOR_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="bottomBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_BOTTOM_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_BOTTOM_BG_COLOR_DESC"></field>
+
+			<field name="bottomBgImage" type="media" label="TPL_FAVOURITE_DARK_BOTTOM_BG_IMAGE_LABEL" description="TPL_FAVOURITE_DARK_BOTTOM_BG_IMAGE_DESC" />
+
+			<field name="bottomBgRepeat" type="list" default="repeat" label="TPL_FAVOURITE_DARK_BOTTOM_BG_REPEAT_LABEL" description="TPL_FAVOURITE_DARK_BOTTOM_BG_REPEAT_DESC">
+				<option value="repeat">repeat</option>
+				<option value="no-repeat">no-repeat</option>
+				<option value="repeat-x">repeat-x</option>
+				<option value="repeat-y">repeat-y</option>
+			</field>
+
+			<field name="bottomColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_BOTTOM_COLOR_LABEL" description="TPL_FAVOURITE_DARK_BOTTOM_COLOR_DESC"></field>
+
+			<field name="bottomTitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_BOTTOM_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_BOTTOM_TITLE_COLOR_DESC"></field>
+
+			<field name="bottomLinkColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_BOTTOM_LINK_COLOR_LABEL" description="TPL_FAVOURITE_DARK_BOTTOM_LINK_COLOR_DESC"></field>
+
+			<field name="bottomLinkHoverColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_BOTTOM_LINK_HOVER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_BOTTOM_LINK_HOVER_COLOR_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="userBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_USER_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_USER_BG_COLOR_DESC"></field>
+
+			<field name="userBgImage" type="media" label="TPL_FAVOURITE_DARK_USER_BG_IMAGE_LABEL" description="TPL_FAVOURITE_DARK_USER_BG_IMAGE_DESC" />
+
+			<field name="userBgRepeat" type="list" default="repeat" label="TPL_FAVOURITE_DARK_USER_BG_REPEAT_LABEL" description="TPL_FAVOURITE_DARK_USER_BG_REPEAT_DESC">
+				<option value="repeat">repeat</option>
+				<option value="no-repeat">no-repeat</option>
+				<option value="repeat-x">repeat-x</option>
+				<option value="repeat-y">repeat-y</option>
+			</field>
+
+			<field name="userColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_USER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_USER_COLOR_DESC"></field>
+
+			<field name="userTitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_USER_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_USER_TITLE_COLOR_DESC"></field>
+
+			<field name="userLinkColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_USER_LINK_COLOR_LABEL" description="TPL_FAVOURITE_DARK_USER_LINK_COLOR_DESC"></field>
+
+			<field name="userLinkHoverColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_USER_LINK_HOVER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_USER_LINK_HOVER_COLOR_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="footerBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_FOOTER_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_FOOTER_BG_COLOR_DESC"></field>
+
+			<field name="footerBgImage" type="media" label="TPL_FAVOURITE_DARK_FOOTER_BG_IMAGE_LABEL" description="TPL_FAVOURITE_DARK_FOOTER_BG_IMAGE_DESC" />
+
+			<field name="footerBgRepeat" type="list" default="repeat" label="TPL_FAVOURITE_DARK_FOOTER_BG_REPEAT_LABEL" description="TPL_FAVOURITE_DARK_FOOTER_BG_REPEAT_DESC">
+				<option value="repeat">repeat</option>
+				<option value="no-repeat">no-repeat</option>
+				<option value="repeat-x">repeat-x</option>
+				<option value="repeat-y">repeat-y</option>
+			</field>
+
+			<field name="footerColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_FOOTER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_FOOTER_COLOR_DESC"></field>
+
+			<field name="footerTitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_FOOTER_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_FOOTER_TITLE_COLOR_DESC"></field>
+
+			<field name="footerLinkColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_FOOTER_LINK_COLOR_LABEL" description="TPL_FAVOURITE_DARK_FOOTER_LINK_COLOR_DESC"></field>
+
+			<field name="footerLinkHoverColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_FOOTER_LINK_HOVER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_FOOTER_LINK_HOVER_COLOR_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="showCopyright" type="radio" default="1" class="btn-group" label="TPL_FAVOURITE_DARK_SHOW_COPYRIGHT_LABEL" description="TPL_FAVOURITE_DARK_SHOW_COPYRIGHT_DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+
+			<field name="copyrightText" type="textarea" default="FavThemes" rows="1" cols="40"
+				label="TPL_FAVOURITE_DARK_COPYRIGHT_TEXT_LABEL"
+				description="TPL_FAVOURITE_DARK_COPYRIGHT_TEXT_DESC"></field>
+
+			<field name="copyrightTextLink" type="textarea" default="www.favthemes.com" rows="1" cols="40"
+				label="TPL_FAVOURITE_DARK_COPYRIGHT_TEXT_LINK_LABEL"
+				description="TPL_FAVOURITE_DARK_COPYRIGHT_TEXT_LINK_DESC"></field>
+
+			<field name="copyrightColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_COPYRIGHT_COLOR_LABEL" description="TPL_FAVOURITE_DARK_COPYRIGHT_COLOR_DESC"></field>
+
+			<field name="copyrightFontSize" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_COPYRIGHT_FONT_SIZE_LABEL" description="TPL_FAVOURITE_DARK_COPYRIGHT_FONT_SIZE_DESC"></field>
+
+			<field name="copyrightLineHeight" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_COPYRIGHT_LINE_HEIGHT_LABEL" description="TPL_FAVOURITE_DARK_COPYRIGHT_LINE_HEIGHT_DESC"></field>
+
+			<field name="copyrightPadding" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_COPYRIGHT_PADDING_LABEL" description="TPL_FAVOURITE_DARK_COPYRIGHT_PADDING_DESC"></field>
+
+			<field name="copyrightMargin" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_COPYRIGHT_MARGIN_LABEL" description="TPL_FAVOURITE_DARK_COPYRIGHT_MARGIN_DESC"></field>
+
+			<field name="copyrightBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_COPYRIGHT_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_COPYRIGHT_BG_COLOR_DESC"></field>
+
+			<field name="copyrightBgImage" type="media" label="TPL_FAVOURITE_DARK_COPYRIGHT_BG_IMAGE_LABEL" description="TPL_FAVOURITE_DARK_COPYRIGHT_BG_IMAGE_DESC" />
+
+			<field name="copyrightBgRepeat" type="list" default="repeat" label="TPL_FAVOURITE_DARK_COPYRIGHT_BG_REPEAT_LABEL" description="TPL_FAVOURITE_DARK_COPYRIGHT_BG_REPEAT_DESC">
+				<option value="repeat">repeat</option>
+				<option value="no-repeat">no-repeat</option>
+				<option value="repeat-x">repeat-x</option>
+				<option value="repeat-y">repeat-y</option>
+			</field>
+
+			<field name="copyrightColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_COPYRIGHT_COLOR_LABEL" description="TPL_FAVOURITE_DARK_COPYRIGHT_COLOR_DESC"></field>
+
+			<field name="copyrightTitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_COPYRIGHT_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_COPYRIGHT_TITLE_COLOR_DESC"></field>
+
+			<field name="copyrightLinkColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_COPYRIGHT_LINK_COLOR_LABEL" description="TPL_FAVOURITE_DARK_COPYRIGHT_LINK_COLOR_DESC"></field>
+
+			<field name="copyrightLinkHoverColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_COPYRIGHT_LINK_HOVER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_COPYRIGHT_LINK_HOVER_COLOR_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="debugBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_DEBUG_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_DEBUG_BG_COLOR_DESC"></field>
+
+			<field name="debugBgImage" type="media" label="TPL_FAVOURITE_DARK_DEBUG_BG_IMAGE_LABEL" description="TPL_FAVOURITE_DARK_DEBUG_BG_IMAGE_DESC" />
+
+			<field name="debugBgRepeat" type="list" default="repeat" label="TPL_FAVOURITE_DARK_DEBUG_BG_REPEAT_LABEL" description="TPL_FAVOURITE_DARK_DEBUG_BG_REPEAT_DESC">
+				<option value="repeat">repeat</option>
+				<option value="no-repeat">no-repeat</option>
+				<option value="repeat-x">repeat-x</option>
+				<option value="repeat-y">repeat-y</option>
+			</field>
+
+			<field name="debugColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_DEBUG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_DEBUG_COLOR_DESC"></field>
+
+			<field name="debugTitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_DEBUG_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_DEBUG_TITLE_COLOR_DESC"></field>
+
+			<field name="debugLinkColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_DEBUG_LINK_COLOR_LABEL" description="TPL_FAVOURITE_DARK_DEBUG_LINK_COLOR_DESC"></field>
+
+			<field name="debugLinkHoverColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_DEBUG_LINK_HOVER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_DEBUG_LINK_HOVER_COLOR_DESC"></field>	
+
+		</fieldset>
+
+		<fieldset name="logo" description="" label="TPL_FAVOURITE_DARK_PARAMS_LOGO">
+
+			<field name="showDefaultLogo" type="radio" default="1" class="btn-group" label="TPL_FAVOURITE_DARK_SHOW_DEFAULT_LOGO_LABEL" description="TPL_FAVOURITE_DARK_SHOW_DEFAULT_LOGO_DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+
+			<field name="defaultLogo" type="imagelist" default="logo.png" label="TPL_FAVOURITE_DARK_DEFAULT_LOGO_LABEL" description="TPL_FAVOURITE_DARK_DEFAULT_LOGO_DESC" directory="/templates/favouritedark/images/logo" hide_default="no" exclude="" stripext="" />
+
+			<field name="defaultLogoImgAlt" type="text" size="10" default="Favourite Dark template" label="TPL_FAVOURITE_DARK_DEFAULT_LOGO_IMG_ALT_LABEL" description="TPL_FAVOURITE_DARK_DEFAULT_LOGO_IMG_ALT_DESC"></field>
+
+			<field name="defaultLogoPadding" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_DEFAULT_LOGO_PADDING_LABEL" description="TPL_FAVOURITE_DARK_DEFAULT_LOGO_PADDING_DESC"></field>
+
+			<field name="defaultLogoMargin" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_DEFAULT_LOGO_MARGIN_LABEL" description="TPL_FAVOURITE_DARK_DEFAULT_LOGO_MARGIN_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="showMediaLogo" type="radio" default="0" class="btn-group" label="TPL_FAVOURITE_DARK_SHOW_MEDIA_LOGO_LABEL" description="TPL_FAVOURITE_DARK_SHOW_MEDIA_LOGO_DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+
+			<field name="mediaLogo" type="media" label="TPL_FAVOURITE_DARK_MEDIA_LOGO_LABEL" description="TPL_FAVOURITE_DARK_MEDIA_LOGO_DESC" />
+
+			<field name="mediaLogoImgAlt" type="text" size="10" default="Favourite Dark template" label="TPL_FAVOURITE_DARK_MEDIA_LOGO_IMG_ALT_LABEL" description="TPL_FAVOURITE_DARK_MEDIA_LOGO_IMG_ALT_DESC"></field>
+
+			<field name="mediaLogoPadding" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_MEDIA_LOGO_PADDING_LABEL" description="TPL_FAVOURITE_DARK_MEDIA_LOGO_PADDING_DESC"></field>
+
+			<field name="mediaLogoMargin" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_MEDIA_LOGO_MARGIN_LABEL" description="TPL_FAVOURITE_DARK_MEDIA_LOGO_MARGIN_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="showTextLogo" type="radio" default="0" class="btn-group" label="TPL_FAVOURITE_DARK_SHOW_TEXT_LOGO_LABEL" description="TPL_FAVOURITE_DARK_SHOW_TEXT_LOGO_DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+
+			<field name="textLogo"  type="textarea" default="logo text here..." rows="1" cols="40"
+				label="TPL_FAVOURITE_DARK_TEXT_LOGO_LABEL"
+				description="TPL_FAVOURITE_DARK_TEXT_LOGO_DESC" />				
+
+			<field name="textLogoColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_TEXT_LOGO_COLOR_LABEL" description="TPL_FAVOURITE_DARK_TEXT_LOGO_COLOR_DESC"></field>
+
+			<field name="textLogoFontSize" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_TEXT_LOGO_FONT_SIZE_LABEL" description="TPL_FAVOURITE_DARK_TEXT_LOGO_FONT_SIZE_DESC"></field>
+
+			<field name="textLogoGoogleFont" class="" type="text" default="" label="TPL_FAVOURITE_DARK_TEXT_LOGO_GOOGLE_FONT_LABEL" description="TPL_FAVOURITE_DARK_TEXT_LOGO_GOOGLE_FONT_DESC" />
+
+			<field name="textLogoLineHeight" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_TEXT_LOGO_LINE_HEIGHT_LABEL" description="TPL_FAVOURITE_DARK_TEXT_LOGO_LINE_HEIGHT_DESC"></field>
+
+			<field name="textLogoPadding" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_TEXT_LOGO_PADDING_LABEL" description="TPL_FAVOURITE_DARK_TEXT_LOGO_PADDING_DESC"></field>
+
+			<field name="textLogoMargin" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_TEXT_LOGO_MARGIN_LABEL" description="TPL_FAVOURITE_DARK_TEXT_LOGO_MARGIN_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="showSlogan" type="radio" default="1" class="btn-group" label="TPL_FAVOURITE_DARK_SHOW_LOGO_SLOGAN_LABEL" description="TPL_FAVOURITE_DARK_SHOW_LOGO_SLOGAN_DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+
+			<field name="slogan" type="textarea" default="dark version" label="TPL_FAVOURITE_DARK_LOGO_SLOGAN_LABEL" description="TPL_FAVOURITE_DARK_LOGO_SLOGAN_DESC" rows="1" cols="40"></field>
+
+			<field name="sloganColor" class="color {required:false}" type="text" default="#777" label="TPL_FAVOURITE_DARK_LOGO_SLOGAN_COLOR_LABEL" description="TPL_FAVOURITE_DARK_LOGO_SLOGAN_COLOR_DESC"></field>
+
+			<field name="sloganFontSize" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_LOGO_SLOGAN_FONT_SIZE_LABEL" description="TPL_FAVOURITE_DARK_LOGO_SLOGAN_FONT_SIZE_DESC"></field>
+
+			<field name="sloganFontFamily" type="list" default="'Open Sans', Helvetica, sans-serif" label="TPL_FAVOURITE_DARK_LOGO_SLOGAN_FONT_FAMILY_LABEL" description="TPL_FAVOURITE_DARK_LOGO_SLOGAN_FONT_FAMILY_DESC">
+				<option value="'Open Sans', Helvetica, sans-serif">Open Sans</option>
+				<option value="'Helvetica Neue', Helvetica, sans-serif">Helvetica</option>
+				<option value="Arial, Sans-Serif">Arial</option>
+				<option value="'Times New Roman', Times, Serif">Times New Roman</option>
+				<option value="'Trebuchet MS', Sans-Serif">Trebuchet</option>
+				<option value="Verdana, Sans-Serif">Verdana</option>
+				<option value="Georgia, Serif">Georgia</option>
+				<option value="Tahoma, Sans-Serif">Tahoma</option>
+			</field>
+
+			<field name="sloganLineHeight" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_LOGO_SLOGAN_LINE_HEIGHT_LABEL" description="TPL_FAVOURITE_DARK_LOGO_SLOGAN_LINE_HEIGHT_DESC"></field>
+
+			<field name="sloganPadding" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_LOGO_SLOGAN_PADDING_LABEL" description="TPL_FAVOURITE_DARK_LOGO_SLOGAN_PADDING_DESC"></field>
+
+			<field name="sloganMargin" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_LOGO_SLOGAN_MARGIN_LABEL" description="TPL_FAVOURITE_DARK_LOGO_SLOGAN_MARGIN_DESC"></field>
+
+		</fieldset>
+
+		<fieldset name="mobile" description="" label="TPL_FAVOURITE_DARK_PARAMS_MOBILE">
+
+			<field name="showRetinaLogo" type="radio" default="0" class="btn-group" label="TPL_FAVOURITE_DARK_SHOW_RETINA_LOGO_LABEL" description="TPL_FAVOURITE_DARK_SHOW_RETINA_LOGO_DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+
+			<field name="retinaLogo" type="media" label="TPL_FAVOURITE_DARK_RETINA_LOGO_LABEL" description="TPL_FAVOURITE_DARK_RETINA_LOGO_DESC" />
+
+			<field name="retinaLogoHeight" type="text" size="10" default="52px" label="TPL_FAVOURITE_DARK_RETINA_LOGO_HEIGHT_LABEL" description="TPL_FAVOURITE_DARK_RETINA_LOGO_HEIGHT_DESC"></field>
+
+			<field name="retinaLogoWidth" type="text" size="10" default="188px" label="TPL_FAVOURITE_DARK_RETINA_LOGO_WIDTH_LABEL" description="TPL_FAVOURITE_DARK_RETINA_LOGO_WIDTH_DESC"></field>
+
+			<field name="retinaLogoImgAlt" type="text" size="10" default="Favourite Dark template" label="TPL_FAVOURITE_DARK_RETINA_LOGO_IMG_ALT_LABEL" description="TPL_FAVOURITE_DARK_RETINA_LOGO_IMG_ALT_DESC"></field>
+
+			<field name="retinaLogoPadding" type="text" size="10" default="0px" label="TPL_FAVOURITE_DARK_RETINA_LOGO_PADDING_LABEL" description="TPL_FAVOURITE_DARK_RETINA_LOGO_PADDING_DESC"></field>
+
+			<field name="retinaLogoMargin" type="text" size="10" default="0px" label="TPL_FAVOURITE_DARK_RETINA_LOGO_MARGIN_LABEL" description="TPL_FAVOURITE_DARK_RETINA_LOGO_MARGIN_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="mobileNavColor" type="radio" class="btn-group" default="navbar navbar-inverse" label="TPL_FAVOURITE_DARK_MOBILE_NAV_COLOR_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_NAV_COLOR_DESC">
+				<option value="navbar navbar-inverse">Dark</option>
+				<option value="navbar">Light</option>
+			</field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="mobileShowImages" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_IMAGES_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_IMAGES_DESC">
+				<option value="inline-block">Show</option>
+				<option value="none!important">Hide</option>
+			</field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="paragraphMobileFontSize" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_PARAGRAPH_MOBILE_FONT_SIZE_LABEL" description="TPL_FAVOURITE_DARK_PARAGRAPH_MOBILE_FONT_SIZE_DESC"></field>
+
+			<field name="articleMobileTitleFontSize" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_ARTICLE_MOBILE_TITLE_FONT_SIZE_LABEL" description="TPL_FAVOURITE_DARK_ARTICLE_MOBILE_TITLE_FONT_SIZE_DESC"></field>
+
+			<field name="moduleMobileTitleFontSize" type="text" size="10" default="" label="TPL_FAVOURITE_DARK_MODULE_MOBILE_TITLE_FONT_SIZE_LABEL" description="TPL_FAVOURITE_DARK_MODULE_MOBILE_TITLE_FONT_SIZE_DESC"></field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="mobileShowAdvert" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_ADVERT_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_ADVERT_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="mobileShowIntro1" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_INTRO1_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_INTRO1_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowIntro2" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_INTRO2_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_INTRO2_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowIntro3" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_INTRO3_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_INTRO3_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowIntro4" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_INTRO4_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_INTRO4_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="mobileShowSlide1" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_SLIDE1_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_SLIDE1_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowSlide2" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_SLIDE2_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_SLIDE2_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="mobileShowShowcase1" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_SHOWCASE1_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_SHOWCASE1_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowShowcase2" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_SHOWCASE2_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_SHOWCASE2_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowShowcase3" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_SHOWCASE3_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_SHOWCASE3_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowShowcase4" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_SHOWCASE4_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_SHOWCASE4_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="mobileShowPromo1" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_PROMO1_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_PROMO1_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowPromo2" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_PROMO2_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_PROMO2_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowPromo3" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_PROMO3_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_PROMO3_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="mobileShowTop1" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_TOP1_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_TOP1_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowTop2" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_TOP2_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_TOP2_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowTop3" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_TOP3_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_TOP3_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowTop4" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_TOP4_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_TOP4_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="mobileShowMaintop1" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_MAINTOP1_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_MAINTOP1_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowMaintop2" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_MAINTOP2_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_MAINTOP2_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowMaintop3" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_MAINTOP3_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_MAINTOP3_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="mobileShowSidebar1" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_SIDEBAR1_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_SIDEBAR1_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowSidebar2" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_SIDEBAR2_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_SIDEBAR2_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="mobileShowMainbottom1" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_MAINBOTTOM1_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_MAINBOTTOM1_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowMainbottom2" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_MAINBOTTOM2_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_MAINBOTTOM2_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowMainbottom3" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_MAINBOTTOM3_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_MAINBOTTOM3_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="mobileShowBottom1" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_BOTTOM1_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_BOTTOM1_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowBottom2" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_BOTTOM2_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_BOTTOM2_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowBottom3" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_BOTTOM3_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_BOTTOM3_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowBottom4" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_BOTTOM4_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_BOTTOM4_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="mobileShowUser1" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_USER1_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_USER1_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowUser2" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_USER2_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_USER2_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowUser3" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_USER3_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_USER3_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="mobileShowFooter1" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_FOOTER1_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_FOOTER1_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowFooter2" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_FOOTER2_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_FOOTER2_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowFooter3" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_FOOTER3_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_FOOTER3_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowFooter4" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_FOOTER4_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_FOOTER4_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="mobileShowCopyright1" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_COPYRIGHT1_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_COPYRIGHT1_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+			<field name="mobileShowCopyright2" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_COPYRIGHT2_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_COPYRIGHT2_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+		<field type="spacer" hr="true" />
+
+			<field name="mobileShowDebug" type="radio" default="" class="btn-group" label="TPL_FAVOURITE_DARK_MOBILE_SHOW_DEBUG_LABEL" description="TPL_FAVOURITE_DARK_MOBILE_SHOW_DEBUG_DESC">
+				<option value="block">Show</option>
+				<option value="none">Hide</option>
+			</field>
+
+		</fieldset>
+
+		<fieldset name="suffix" description="" label="TPL_FAVOURITE_DARK_PARAMS_SFX">
+
+			<field name="sfx1TitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX1_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX1_TITLE_COLOR_DESC"></field>
+			
+			<field name="sfx1TitleBorderColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX1_TITLE_BORDER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX1_TITLE_BORDER_COLOR_DESC"></field>
+
+			<field name="sfx1TitleIcon" type="text" default="fa-cloud" label="TPL_FAVOURITE_DARK_SFX1_TITLE_ICON_LABEL" description="TPL_FAVOURITE_DARK_SFX1_TITLE_ICON_DESC"></field>
+
+			<field name="sfx1TitleIconColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX1_TITLE_ICON_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX1_TITLE_ICON_COLOR_DESC"></field>
+
+			<field name="sfx1TitleIconBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX1_TITLE_ICON_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX1_TITLE_ICON_BG_COLOR_DESC"></field>
+
+			<field name="sfx1TitleIconLineHeight" type="text" default="" label="TPL_FAVOURITE_DARK_SFX1_TITLE_ICON_LINE_HEIGHT_LABEL" description="TPL_FAVOURITE_DARK_SFX1_TITLE_ICON_LINE_HEIGHT_DESC"></field>
+
+			<field name="sfx1TitleIconFontSize" type="text" default="" label="TPL_FAVOURITE_DARK_SFX1_TITLE_ICON_FONT_SIZE_LABEL" description="TPL_FAVOURITE_DARK_SFX1_TITLE_ICON_FONT_SIZE_DESC"></field>
+
+			<field name="sfx1TitleIconPadding" type="text" default="" label="TPL_FAVOURITE_DARK_SFX1_TITLE_ICON_PADDING_LABEL" description="TPL_FAVOURITE_DARK_SFX1_TITLE_ICON_PADDING_DESC"></field>
+			
+		<field type="spacer" hr="true" />
+			
+			<field name="sfx2TitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX2_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX2_TITLE_COLOR_DESC"></field>
+			
+			<field name="sfx2TitleBorderColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX2_TITLE_BORDER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX2_TITLE_BORDER_COLOR_DESC"></field>
+
+			<field name="sfx2TitleIcon" type="text" default="fa-rocket" label="TPL_FAVOURITE_DARK_SFX2_TITLE_ICON_LABEL" description="TPL_FAVOURITE_DARK_SFX2_TITLE_ICON_DESC"></field>
+
+			<field name="sfx2TitleIconColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX2_TITLE_ICON_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX2_TITLE_ICON_COLOR_DESC"></field>
+
+			<field name="sfx2TitleIconBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX2_TITLE_ICON_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX2_TITLE_ICON_BG_COLOR_DESC"></field>
+
+			<field name="sfx2TitleIconLineHeight" type="text" default="" label="TPL_FAVOURITE_DARK_SFX2_TITLE_ICON_LINE_HEIGHT_LABEL" description="TPL_FAVOURITE_DARK_SFX2_TITLE_ICON_LINE_HEIGHT_DESC"></field>
+
+			<field name="sfx2TitleIconFontSize" type="text" default="" label="TPL_FAVOURITE_DARK_SFX2_TITLE_ICON_FONT_SIZE_LABEL" description="TPL_FAVOURITE_DARK_SFX2_TITLE_ICON_FONT_SIZE_DESC"></field>
+
+			<field name="sfx2TitleIconPadding" type="text" default="" label="TPL_FAVOURITE_DARK_SFX2_TITLE_ICON_PADDING_LABEL" description="TPL_FAVOURITE_DARK_SFX2_TITLE_ICON_PADDING_DESC"></field>
+			
+		<field type="spacer" hr="true" />
+			
+			<field name="sfx3TitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX3_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX3_TITLE_COLOR_DESC"></field>
+			
+			<field name="sfx3TitleBorderColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX3_TITLE_BORDER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX3_TITLE_BORDER_COLOR_DESC"></field>
+
+			<field name="sfx3TitleIcon" type="text" default="fa-camera-retro" label="TPL_FAVOURITE_DARK_SFX3_TITLE_ICON_LABEL" description="TPL_FAVOURITE_DARK_SFX3_TITLE_ICON_DESC"></field>
+
+			<field name="sfx3TitleIconColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX3_TITLE_ICON_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX3_TITLE_ICON_COLOR_DESC"></field>
+
+			<field name="sfx3TitleIconBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX3_TITLE_ICON_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX3_TITLE_ICON_BG_COLOR_DESC"></field>
+
+			<field name="sfx3TitleIconLineHeight" type="text" default="" label="TPL_FAVOURITE_DARK_SFX3_TITLE_ICON_LINE_HEIGHT_LABEL" description="TPL_FAVOURITE_DARK_SFX3_TITLE_ICON_LINE_HEIGHT_DESC"></field>
+
+			<field name="sfx3TitleIconFontSize" type="text" default="" label="TPL_FAVOURITE_DARK_SFX3_TITLE_ICON_FONT_SIZE_LABEL" description="TPL_FAVOURITE_DARK_SFX3_TITLE_ICON_FONT_SIZE_DESC"></field>
+
+			<field name="sfx3TitleIconPadding" type="text" default="" label="TPL_FAVOURITE_DARK_SFX3_TITLE_ICON_PADDING_LABEL" description="TPL_FAVOURITE_DARK_SFX3_TITLE_ICON_PADDING_DESC"></field>
+			
+		<field type="spacer" hr="true" />
+			
+			<field name="sfx4TitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX4_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX4_TITLE_COLOR_DESC"></field>
+			
+			<field name="sfx4TitleBorderColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX4_TITLE_BORDER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX4_TITLE_BORDER_COLOR_DESC"></field>
+
+			<field name="sfx4TitleIcon" type="text" default="fa-laptop" label="TPL_FAVOURITE_DARK_SFX4_TITLE_ICON_LABEL" description="TPL_FAVOURITE_DARK_SFX4_TITLE_ICON_DESC"></field>
+
+			<field name="sfx4TitleIconColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX4_TITLE_ICON_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX4_TITLE_ICON_COLOR_DESC"></field>
+
+			<field name="sfx4TitleIconBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX4_TITLE_ICON_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX4_TITLE_ICON_BG_COLOR_DESC"></field>
+
+			<field name="sfx4TitleIconLineHeight" type="text" default="" label="TPL_FAVOURITE_DARK_SFX4_TITLE_ICON_LINE_HEIGHT_LABEL" description="TPL_FAVOURITE_DARK_SFX4_TITLE_ICON_LINE_HEIGHT_DESC"></field>
+
+			<field name="sfx4TitleIconFontSize" type="text" default="" label="TPL_FAVOURITE_DARK_SFX4_TITLE_ICON_FONT_SIZE_LABEL" description="TPL_FAVOURITE_DARK_SFX4_TITLE_ICON_FONT_SIZE_DESC"></field>
+
+			<field name="sfx4TitleIconPadding" type="text" default="" label="TPL_FAVOURITE_DARK_SFX4_TITLE_ICON_PADDING_LABEL" description="TPL_FAVOURITE_DARK_SFX4_TITLE_ICON_PADDING_DESC"></field>
+			
+		<field type="spacer" hr="true" />
+			
+			<field name="sfx5TitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX5_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX5_TITLE_COLOR_DESC"></field>
+			
+			<field name="sfx5TitleBorderColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX5_TITLE_BORDER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX5_TITLE_BORDER_COLOR_DESC"></field>
+
+			<field name="sfx5TitleIcon" type="text" default="fa-shopping-cart" label="TPL_FAVOURITE_DARK_SFX5_TITLE_ICON_LABEL" description="TPL_FAVOURITE_DARK_SFX5_TITLE_ICON_DESC"></field>
+
+			<field name="sfx5TitleIconColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX5_TITLE_ICON_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX5_TITLE_ICON_COLOR_DESC"></field>
+
+			<field name="sfx5TitleIconBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX5_TITLE_ICON_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX5_TITLE_ICON_BG_COLOR_DESC"></field>
+
+			<field name="sfx5TitleIconLineHeight" type="text" default="" label="TPL_FAVOURITE_DARK_SFX5_TITLE_ICON_LINE_HEIGHT_LABEL" description="TPL_FAVOURITE_DARK_SFX5_TITLE_ICON_LINE_HEIGHT_DESC"></field>
+
+			<field name="sfx5TitleIconFontSize" type="text" default="" label="TPL_FAVOURITE_DARK_SFX5_TITLE_ICON_FONT_SIZE_LABEL" description="TPL_FAVOURITE_DARK_SFX5_TITLE_ICON_FONT_SIZE_DESC"></field>
+
+			<field name="sfx5TitleIconPadding" type="text" default="" label="TPL_FAVOURITE_DARK_SFX5_TITLE_ICON_PADDING_LABEL" description="TPL_FAVOURITE_DARK_SFX5_TITLE_ICON_PADDING_DESC"></field>
+			
+		<field type="spacer" hr="true" />
+			
+			<field name="sfx6TitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX6_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX6_TITLE_COLOR_DESC"></field>
+			
+			<field name="sfx6TitleBorderColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX6_TITLE_BORDER_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX6_TITLE_BORDER_COLOR_DESC"></field>
+
+			<field name="sfx6TitleIcon" type="text" default="fa-picture-o" label="TPL_FAVOURITE_DARK_SFX6_TITLE_ICON_LABEL" description="TPL_FAVOURITE_DARK_SFX6_TITLE_ICON_DESC"></field>
+
+			<field name="sfx6TitleIconColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX6_TITLE_ICON_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX6_TITLE_ICON_COLOR_DESC"></field>
+
+			<field name="sfx6TitleIconBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX6_TITLE_ICON_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX6_TITLE_ICON_BG_COLOR_DESC"></field>
+
+			<field name="sfx6TitleIconLineHeight" type="text" default="" label="TPL_FAVOURITE_DARK_SFX6_TITLE_ICON_LINE_HEIGHT_LABEL" description="TPL_FAVOURITE_DARK_SFX6_TITLE_ICON_LINE_HEIGHT_DESC"></field>
+
+			<field name="sfx6TitleIconFontSize" type="text" default="" label="TPL_FAVOURITE_DARK_SFX6_TITLE_ICON_FONT_SIZE_LABEL" description="TPL_FAVOURITE_DARK_SFX6_TITLE_ICON_FONT_SIZE_DESC"></field>
+
+			<field name="sfx6TitleIconPadding" type="text" default="" label="TPL_FAVOURITE_DARK_SFX6_TITLE_ICON_PADDING_LABEL" description="TPL_FAVOURITE_DARK_SFX6_TITLE_ICON_PADDING_DESC"></field>
+			
+		<field type="spacer" hr="true" />
+
+			<field name="sfx7Color" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX7_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX7_COLOR_DESC"></field>
+
+			<field name="sfx7BgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX7_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX7_BG_COLOR_DESC"></field>
+
+			<field name="sfx7TitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX7_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX7_TITLE_COLOR_DESC"></field>
+
+			<field name="sfx7TitleIcon" type="text" default="fa-puzzle-piece" label="TPL_FAVOURITE_DARK_SFX7_TITLE_ICON_LABEL" description="TPL_FAVOURITE_DARK_SFX7_TITLE_ICON_DESC"></field>
+
+			<field name="sfx7TitleIconColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX7_TITLE_ICON_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX7_TITLE_ICON_COLOR_DESC"></field>
+
+			<field name="sfx7TitleIconBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX7_TITLE_ICON_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX7_TITLE_ICON_BG_COLOR_DESC"></field>
+
+			<field name="sfx7TitleIconLineHeight" type="text" default="" label="TPL_FAVOURITE_DARK_SFX7_TITLE_ICON_LINE_HEIGHT_LABEL" description="TPL_FAVOURITE_DARK_SFX7_TITLE_ICON_LINE_HEIGHT_DESC"></field>
+
+			<field name="sfx7TitleIconFontSize" type="text" default="" label="TPL_FAVOURITE_DARK_SFX7_TITLE_ICON_FONT_SIZE_LABEL" description="TPL_FAVOURITE_DARK_SFX7_TITLE_ICON_FONT_SIZE_DESC"></field>
+
+			<field name="sfx7TitleIconPadding" type="text" default="" label="TPL_FAVOURITE_DARK_SFX7_TITLE_ICON_PADDING_LABEL" description="TPL_FAVOURITE_DARK_SFX7_TITLE_ICON_PADDING_DESC"></field>
+
+		<field type="spacer" hr="true" />
+			
+			<field name="sfx8Color" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX8_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX8_COLOR_DESC"></field>
+
+			<field name="sfx8BgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX8_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX8_BG_COLOR_DESC"></field>
+
+			<field name="sfx8TitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX8_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX8_TITLE_COLOR_DESC"></field>
+
+			<field name="sfx8TitleIcon" type="text" default="fa-flask" label="TPL_FAVOURITE_DARK_SFX8_TITLE_ICON_LABEL" description="TPL_FAVOURITE_DARK_SFX8_TITLE_ICON_DESC"></field>
+
+			<field name="sfx8TitleIconColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX8_TITLE_ICON_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX8_TITLE_ICON_COLOR_DESC"></field>
+
+			<field name="sfx8TitleIconBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX8_TITLE_ICON_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX8_TITLE_ICON_BG_COLOR_DESC"></field>
+
+			<field name="sfx8TitleIconLineHeight" type="text" default="" label="TPL_FAVOURITE_DARK_SFX8_TITLE_ICON_LINE_HEIGHT_LABEL" description="TPL_FAVOURITE_DARK_SFX8_TITLE_ICON_LINE_HEIGHT_DESC"></field>
+
+			<field name="sfx8TitleIconFontSize" type="text" default="" label="TPL_FAVOURITE_DARK_SFX8_TITLE_ICON_FONT_SIZE_LABEL" description="TPL_FAVOURITE_DARK_SFX8_TITLE_ICON_FONT_SIZE_DESC"></field>
+
+			<field name="sfx8TitleIconPadding" type="text" default="" label="TPL_FAVOURITE_DARK_SFX8_TITLE_ICON_PADDING_LABEL" description="TPL_FAVOURITE_DARK_SFX8_TITLE_ICON_PADDING_DESC"></field>
+
+		<field type="spacer" hr="true" />
+			
+			<field name="sfx9Color" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX9_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX9_COLOR_DESC"></field>
+
+			<field name="sfx9BgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX9_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX9_BG_COLOR_DESC"></field>
+
+			<field name="sfx9TitleColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX9_TITLE_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX9_TITLE_COLOR_DESC"></field>
+
+			<field name="sfx9TitleIcon" type="text" default="fa-bullhorn" label="TPL_FAVOURITE_DARK_SFX9_TITLE_ICON_LABEL" description="TPL_FAVOURITE_DARK_SFX9_TITLE_ICON_DESC"></field>
+
+			<field name="sfx9TitleIconColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX9_TITLE_ICON_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX9_TITLE_ICON_COLOR_DESC"></field>
+
+			<field name="sfx9TitleIconBgColor" class="color {required:false}" type="text" default="" label="TPL_FAVOURITE_DARK_SFX9_TITLE_ICON_BG_COLOR_LABEL" description="TPL_FAVOURITE_DARK_SFX9_TITLE_ICON_BG_COLOR_DESC"></field>
+
+			<field name="sfx9TitleIconLineHeight" type="text" default="" label="TPL_FAVOURITE_DARK_SFX9_TITLE_ICON_LINE_HEIGHT_LABEL" description="TPL_FAVOURITE_DARK_SFX9_TITLE_ICON_LINE_HEIGHT_DESC"></field>
+
+			<field name="sfx9TitleIconFontSize" type="text" default="" label="TPL_FAVOURITE_DARK_SFX9_TITLE_ICON_FONT_SIZE_LABEL" description="TPL_FAVOURITE_DARK_SFX9_TITLE_ICON_FONT_SIZE_DESC"></field>
+
+			<field name="sfx9TitleIconPadding" type="text" default="" label="TPL_FAVOURITE_DARK_SFX9_TITLE_ICON_PADDING_LABEL" description="TPL_FAVOURITE_DARK_SFX9_TITLE_ICON_PADDING_DESC"></field>	
+
+		</fieldset>
+
+		<fieldset name="analytics" description="" label="TPL_FAVOURITE_DARK_PARAMS_ANALYTICS">
+
+			<field name="analyticsCode" type="textarea" rows="6" cols="40" label="TPL_FAVOURITE_DARK_ANALYTICS_LABEL" description="TPL_FAVOURITE_DARK_ANALYTICS_DESC" />	
+
+		</fieldset>
+	</fields>
+</config>
+
+</extension>
+
